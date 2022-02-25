@@ -1,0 +1,1514 @@
+[
+ {
+  "fun": "def __eq__(_ImGuiContext self, _ImGuiContext other)",
+  "class": "_ImGuiContext"
+ },
+ {
+  "fun": "def texture_id(self)",
+  "class": "_DrawCmd"
+ },
+ {
+  "fun": "def elem_count(self)",
+  "class": "_DrawCmd"
+ },
+ {
+  "fun": "def cmd_buffer_size(self)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def vtx_buffer_size(self)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def idx_buffer_size(self)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def flags(self)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def push_clip_rect(self,float clip_rect_min_x, float clip_rect_min_y,float clip_rect_max_x, float clip_rect_max_y,bool intersect_with_current_clip_rect = False)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def push_clip_rect_full_screen(self)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def push_texture_id(self, texture_id)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def get_clip_rect_min(self)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def add_line(self,float start_x, float start_y,float end_x, float end_y,cimgui.ImU32 col,float thickness=1.0,)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def add_rect(self,float upper_left_x, float upper_left_y,float lower_right_x, float lower_right_y,cimgui.ImU32 col,float rounding = 0.0,cimgui.ImDrawFlags flags = 0,float thickness = 1.0,)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def add_rect_filled(self,float upper_left_x, float upper_left_y,float lower_right_x, float lower_right_y,cimgui.ImU32 col,float rounding = 0.0,cimgui.ImDrawFlags flags = 0,)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def add_circle(self,float centre_x, float centre_y,float radius,cimgui.ImU32 col,int num_segments = 0,float thickness = 1.0)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def add_circle_filled(self,float centre_x, float centre_y,float radius,cimgui.ImU32 col,cimgui.ImU32 num_segments = 0)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def add_ngon(self,float centre_x, float centre_y,float radius,cimgui.ImU32 col,int num_segments,float thickness = 1.0)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def add_ngon_filled(self,float centre_x, float centre_y,float radius,cimgui.ImU32 col,int num_segments)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def add_text(self,float pos_x, float pos_y,cimgui.ImU32 col,str text)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def add_image(self,texture_id,tuple a,tuple b,tuple uv_a=(0,0),tuple uv_b=(1,1),cimgui.ImU32 col=0xffffffff)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def add_polyline(self,list points,cimgui.ImU32 col,cimgui.ImDrawFlags flags = 0,float thickness=1.0)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def channels_split(self, int channels_count)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def channels_merge(self)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def prim_unreserve(self, int idx_count, int vtx_count)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def prim_rect_UV(self,float a_x, float a_y,float b_x, float b_y,float uv_a_u, float uv_a_v,float uv_b_u, float uv_b_v,cimgui.ImU32 color = 0xFFFFFFFF)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def prim_quad_UV(self,float a_x, float a_y,float b_x, float b_y,float c_x, float c_y,float d_x, float d_y,float uv_a_u, float uv_a_v,float uv_b_u, float uv_b_v,float uv_c_u, float uv_c_v,float uv_d_u, float uv_d_v,cimgui.ImU32 color = 0xFFFFFFFF)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def prim_write_vtx(self, float pos_x, float pos_y, float u, float v, cimgui.ImU32 color = 0xFFFFFFFF)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def prim_vtx(self, float pos_x, float pos_y, float u, float v, cimgui.ImU32 color = 0xFFFFFFFF)",
+  "class": "_DrawList"
+ },
+ {
+  "fun": "def __cinit__(self)",
+  "class": "_Colors"
+ },
+ {
+  "fun": "def __getitem__(self, cimgui.ImGuiCol variable)",
+  "class": "_Colors"
+ },
+ {
+  "fun": "def __cinit__(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def __eq__(GuiStyle self, GuiStyle other)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def alpha(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def window_padding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def window_min_size(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def window_rounding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def window_border_size(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def child_rounding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def child_border_size(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def popup_rounding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def popup_border_size(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def window_title_align(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def window_menu_button_position(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def frame_padding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def frame_rounding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def frame_border_size(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def item_spacing(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def item_inner_spacing(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def cell_padding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def touch_extra_padding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def indent_spacing(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def columns_min_spacing(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def scrollbar_size(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def scrollbar_rounding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def grab_min_size(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def grab_rounding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def log_slider_deadzone(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def tab_rounding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def tab_border_size(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def tab_min_width_for_close_button(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def color_button_position(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def button_text_align(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def selectable_text_align(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def display_window_padding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def display_safe_area_padding(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def mouse_cursor_scale(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def anti_aliased_lines(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def anti_aliased_line_use_tex(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def anti_aliased_fill(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def curve_tessellation_tolerance(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def circle_segment_max_error(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def circle_tessellation_max_error(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def color(self, cimgui.ImGuiCol variable)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def colors(self)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def scale_all_sizes(self, float scale_factor)",
+  "class": "GuiStyle"
+ },
+ {
+  "fun": "def _require_pointer(self)",
+  "class": "_ImGuiTableColumnSortSpecs"
+ },
+ {
+  "fun": "def column_user_id(self)",
+  "class": "_ImGuiTableColumnSortSpecs"
+ },
+ {
+  "fun": "def column_index(self)",
+  "class": "_ImGuiTableColumnSortSpecs"
+ },
+ {
+  "fun": "def sort_order(self)",
+  "class": "_ImGuiTableColumnSortSpecs"
+ },
+ {
+  "fun": "def sort_direction(self)",
+  "class": "_ImGuiTableColumnSortSpecs"
+ },
+ {
+  "fun": "def __init__(self)",
+  "class": "_ImGuiTableColumnSortSpecs_array"
+ },
+ {
+  "fun": "def __getitem__(self, idx)",
+  "class": "_ImGuiTableColumnSortSpecs_array"
+ },
+ {
+  "fun": "def __next__(self)",
+  "class": "_ImGuiTableColumnSortSpecs_array"
+ },
+ {
+  "fun": "def __init__(self)",
+  "class": "_ImGuiTableSortSpecs"
+ },
+ {
+  "fun": "def specs(self)",
+  "class": "_ImGuiTableSortSpecs"
+ },
+ {
+  "fun": "def specs_dirty(self)",
+  "class": "_ImGuiTableSortSpecs"
+ },
+ {
+  "fun": "def __init__(self)",
+  "class": "_ImGuiViewport"
+ },
+ {
+  "fun": "def id(self)",
+  "class": "_ImGuiViewport"
+ },
+ {
+  "fun": "def dpi_scale(self)",
+  "class": "_ImGuiViewport"
+ },
+ {
+  "fun": "def pos(self)",
+  "class": "_ImGuiViewport"
+ },
+ {
+  "fun": "def work_pos(self)",
+  "class": "_ImGuiViewport"
+ },
+ {
+  "fun": "def draw_data(self)",
+  "class": "_ImGuiViewport"
+ },
+ {
+  "fun": "def platform_request_resize(self)",
+  "class": "_ImGuiViewport"
+ },
+ {
+  "fun": "def platform_request_close(self)",
+  "class": "_ImGuiViewport"
+ },
+ {
+  "fun": "def get_work_center(self)",
+  "class": "_ImGuiViewport"
+ },
+ {
+  "fun": "def _require_pointer(self)",
+  "class": "ImGuiWindowClass"
+ },
+ {
+  "fun": "def class_id(self)",
+  "class": "ImGuiWindowClass"
+ },
+ {
+  "fun": "def viewport_flags_override_set(self)",
+  "class": "ImGuiWindowClass"
+ },
+ {
+  "fun": "def tab_item_flags_override_set(self)",
+  "class": "ImGuiWindowClass"
+ },
+ {
+  "fun": "def docking_always_tab_bar(self)",
+  "class": "ImGuiWindowClass"
+ },
+ {
+  "fun": "def imgui_window_class(self)",
+  "class": "ImGuiWindowClass"
+ },
+ {
+  "fun": "def _require_pointer(self)",
+  "class": "_DrawData"
+ },
+ {
+  "fun": "def deindex_all_buffers(self)",
+  "class": "_DrawData"
+ },
+ {
+  "fun": "def valid(self)",
+  "class": "_DrawData"
+ },
+ {
+  "fun": "def total_vtx_count(self)",
+  "class": "_DrawData"
+ },
+ {
+  "fun": "def display_size(self)",
+  "class": "_DrawData"
+ },
+ {
+  "fun": "def total_idx_count(self)",
+  "class": "_DrawData"
+ },
+ {
+  "fun": "def owner_viewport(self)",
+  "class": "_DrawData"
+ },
+ {
+  "fun": "def __init__(self, glyph_ranges)",
+  "class": "GlyphRanges"
+ },
+ {
+  "fun": "def __del__(self)",
+  "class": "GlyphRanges"
+ },
+ {
+  "fun": "def __init__(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def _require_pointer(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def add_font_from_file_ttf(self, str filename, float size_pixels,font_config=None,glyph_ranges=None)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def clear_tex_data(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def clear_fonts(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def get_glyph_ranges_default(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def get_glyph_ranges_japanese(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def get_glyph_ranges_chinese(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def get_glyph_ranges_thai(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def get_glyph_ranges_latin(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def get_tex_data_as_rgba32(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def texture_width(self)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def texture_id(self, value)",
+  "class": "_FontAtlas"
+ },
+ {
+  "fun": "def config_flags(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def backend_flags(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def display_size(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def delta_time(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def ini_saving_rate(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def log_file_name(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def ini_file_name(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def mouse_double_click_time(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def mouse_double_click_max_distance(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def mouse_drag_threshold(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def key_map(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def key_repeat_delay(self, float value)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def key_repeat_rate(self, float value)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def font_global_scale(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def font_allow_user_scaling(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def display_fb_scale(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def config_mac_osx_behaviors(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def config_cursor_blink(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def config_drag_click_to_input_text(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def config_windows_resize_from_edges(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def config_windows_move_from_title_bar_only(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def config_memory_compact_timer(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def get_clipboard_text_fn(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def set_clipboard_text_fn(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def mouse_pos(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def mouse_down(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def mouse_wheel(self, float value)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def mouse_wheel_horizontal(self, float value)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def mouse_draw_cursor(self, cimgui.bool value)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def key_ctrl(self, cimgui.bool value)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def key_shift(self, cimgui.bool value)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def key_alt(self, cimgui.bool value)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def key_super(self, cimgui.bool value)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def nav_inputs(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def add_input_character_utf16(self, str utf16_chars)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def clear_input_characters(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def want_capture_keyboard(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def want_set_mouse_pos(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def nav_active(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def framerate(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def metrics_render_indices(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def metrics_active_windows(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def mouse_delta(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def config_docking_with_shift(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def config_docking_transparent_payload(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def config_viewports_no_task_bar_icon(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def config_viewports_no_default_parent(self)",
+  "class": "_IO"
+ },
+ {
+  "fun": "def __init__(self)",
+  "class": "_callback_user_info"
+ },
+ {
+  "fun": "def __init__(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def _require_pointer(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def flags(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def event_char(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def event_key(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def buffer_text_length(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def buffer_dirty(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def cursor_pos(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def selection_start(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def selection_end(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def delete_chars(self, int pos, int bytes_count)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def select_all(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def has_selection(self)",
+  "class": "_ImGuiInputTextCallbackData"
+ },
+ {
+  "fun": "def __init__(self)",
+  "class": "_ImGuiSizeCallbackData"
+ },
+ {
+  "fun": "def _require_pointer(self)",
+  "class": "_ImGuiSizeCallbackData"
+ },
+ {
+  "fun": "def pos(self)",
+  "class": "_ImGuiSizeCallbackData"
+ },
+ {
+  "fun": "def desired_size(self)",
+  "class": "_ImGuiSizeCallbackData"
+ },
+ {
+  "fun": "def get_io()",
+  "class": "static"
+ },
+ {
+  "fun": "def new_frame()",
+  "class": "static"
+ },
+ {
+  "fun": "def render()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_version()",
+  "class": "static"
+ },
+ {
+  "fun": "def style_colors_classic(GuiStyle dst = None)",
+  "class": "static"
+ },
+ {
+  "fun": "def show_style_editor(GuiStyle style=None)",
+  "class": "static"
+ },
+ {
+  "fun": "def show_about_window(closable=False)",
+  "class": "static"
+ },
+ {
+  "fun": "def show_metrics_window(closable=False)",
+  "class": "static"
+ },
+ {
+  "fun": "def show_font_selector(str label)",
+  "class": "static"
+ },
+ {
+  "fun": "def get_draw_data()",
+  "class": "static"
+ },
+ {
+  "fun": "def begin_child(child_id label, float width = 0, float height = 0, bool border = False,cimgui.ImGuiWindowFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def end_child()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_content_region_available()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_window_content_region_min()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_window_content_region_width()",
+  "class": "static"
+ },
+ {
+  "fun": "def set_window_focus_labeled(str label)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_window_size_named(str label, float width, float height, cimgui.ImGuiCond condition = ONCE)",
+  "class": "static"
+ },
+ {
+  "fun": "def get_scroll_y()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_scroll_max_y()",
+  "class": "static"
+ },
+ {
+  "fun": "def set_scroll_y(float scroll_y)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_next_window_collapsed(cimgui.bool collapsed, cimgui.ImGuiCond condition=ALWAYS)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_next_window_focus()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_window_draw_list()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_overlay_draw_list()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_window_dpi_scale()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_window_width()",
+  "class": "static"
+ },
+ {
+  "fun": "def set_next_window_position(float x, float y, cimgui.ImGuiCond condition=ALWAYS, float pivot_x=0, float pivot_y=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_next_window_size(float width, float height, cimgui.ImGuiCond condition=ALWAYS)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_next_window_size_constraints(tuple size_min,tuple size_max,object callback = None,user_data = None)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_next_window_content_size(float width, float height)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_window_position(float x, float y, cimgui.ImGuiCond condition = ALWAYS)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_window_collapsed(bool collapsed, cimgui.ImGuiCond condition = ALWAYS)",
+  "class": "static"
+ },
+ {
+  "fun": "def is_window_collapsed()",
+  "class": "static"
+ },
+ {
+  "fun": "def tree_node(str text, cimgui.ImGuiTreeNodeFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def tree_pop()",
+  "class": "static"
+ },
+ {
+  "fun": "def collapsing_header(str text,visible=None,cimgui.ImGuiTreeNodeFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_next_item_open(bool is_open, cimgui.ImGuiCond condition = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def selectable(str label,selected=False,cimgui.ImGuiTreeNodeFlags flags=0,width=0,height=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def listbox(str label,int current,list items,int height_in_items=-1)",
+  "class": "static"
+ },
+ {
+  "fun": "def begin_list_box(str label,width = 0,height = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def listbox_header( # OBSOLETED in 1.81 (from February 2021)str label,width=0,height=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def end_list_box()",
+  "class": "static"
+ },
+ {
+  "fun": "def begin_tooltip()",
+  "class": "static"
+ },
+ {
+  "fun": "def end_tooltip()",
+  "class": "static"
+ },
+ {
+  "fun": "def end_main_menu_bar()",
+  "class": "static"
+ },
+ {
+  "fun": "def end_menu_bar()",
+  "class": "static"
+ },
+ {
+  "fun": "def end_menu()",
+  "class": "static"
+ },
+ {
+  "fun": "def open_popup(str label, cimgui.ImGuiPopupFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def open_popup_on_item_click(str label = None, cimgui.ImGuiPopupFlags popup_flags = 1)",
+  "class": "static"
+ },
+ {
+  "fun": "def begin_popup_modal(str title, visible=None, cimgui.ImGuiWindowFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def begin_popup_context_item(str label = None, cimgui.ImGuiPopupFlags mouse_button = 1)",
+  "class": "static"
+ },
+ {
+  "fun": "def begin_popup_context_window(str label = None,cimgui.ImGuiPopupFlags popup_flags = 1,)",
+  "class": "static"
+ },
+ {
+  "fun": "def begin_popup_context_void(str label = None, cimgui.ImGuiPopupFlags popup_flags = 1)",
+  "class": "static"
+ },
+ {
+  "fun": "def end_popup()",
+  "class": "static"
+ },
+ {
+  "fun": "def begin_table(str label,int column,cimgui.ImGuiTableFlags flags = 0,float outer_size_width = 0.0,float outer_size_height = 0.0,float inner_width = 0.0)",
+  "class": "static"
+ },
+ {
+  "fun": "def end_table()",
+  "class": "static"
+ },
+ {
+  "fun": "def table_next_column()",
+  "class": "static"
+ },
+ {
+  "fun": "def table_setup_column(str label,cimgui.ImGuiTableColumnFlags flags = 0,float init_width_or_weight = 0.0,cimgui.ImU32 user_id = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def table_setup_scroll_freez(int cols, int rows)",
+  "class": "static"
+ },
+ {
+  "fun": "def table_header(str label)",
+  "class": "static"
+ },
+ {
+  "fun": "def table_get_column_count()",
+  "class": "static"
+ },
+ {
+  "fun": "def table_get_row_index()",
+  "class": "static"
+ },
+ {
+  "fun": "def table_get_column_flags(int column_n = -1)",
+  "class": "static"
+ },
+ {
+  "fun": "def text(str text)",
+  "class": "static"
+ },
+ {
+  "fun": "def text_disabled(str text)",
+  "class": "static"
+ },
+ {
+  "fun": "def label_text(str label, str text)",
+  "class": "static"
+ },
+ {
+  "fun": "def bullet()",
+  "class": "static"
+ },
+ {
+  "fun": "def bullet_text(str text)",
+  "class": "static"
+ },
+ {
+  "fun": "def small_button(str label)",
+  "class": "static"
+ },
+ {
+  "fun": "def invisible_button(str identifier, float width, float height, cimgui.ImGuiButtonFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def image_button(texture_id,float width,float height,tuple uv0=(0, 0),tuple uv1=(1, 1),tuple tint_color=(1, 1, 1, 1),tuple border_color=(0, 0, 0, 0),int frame_padding=-1,)",
+  "class": "static"
+ },
+ {
+  "fun": "def image(texture_id,float width,float height,tuple uv0=(0, 0),tuple uv1=(1, 1),tuple tint_color=(1, 1, 1, 1),tuple border_color=(0, 0, 0, 0),)",
+  "class": "static"
+ },
+ {
+  "fun": "def checkbox(str label, cimgui.bool state)",
+  "class": "static"
+ },
+ {
+  "fun": "def radio_button(str label, cimgui.bool active)",
+  "class": "static"
+ },
+ {
+  "fun": "def combo(str label, int current, list items, int height_in_items=-1)",
+  "class": "static"
+ },
+ {
+  "fun": "def color_edit4(str label, float r, float g, float b, float a, cimgui.ImGuiColorEditFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_float2(str label, float value0, float value1,float change_speed = 1.0,float min_value=0.0,float max_value=0.0,str format = \"%.3f\",cimgui.ImGuiSliderFlags flags = 0,)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_float3(str label, float value0, float value1, float value2,float change_speed = 1.0,float min_value=0.0,float max_value=0.0,str format = \"%.3f\",cimgui.ImGuiSliderFlags flags = 0,)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_float4(str label, float value0, float value1, float value2, float value3,float change_speed = 1.0,float min_value=0.0,float max_value=0.0,str format = \"%.3f\",cimgui.ImGuiSliderFlags flags = 0,)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_float_range2(str label,float current_min,float current_max,float speed = 1.0,float min_value = 0.0,float max_value = 0.0,str format = \"%.3f\",str format_max = None,cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_int(str label, int value,float change_speed = 1.0,int min_value=0,int max_value=0,str format = \"%d\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_int2(str label, int value0, int value1,float change_speed = 1.0,int min_value=0,int max_value=0,str format = \"%d\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_int3(str label, int value0, int value1, int value2,float change_speed = 1.0,int min_value=0,int max_value=0,str format = \"%d\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_int4(str label, int value0, int value1, int value2, int value3,float change_speed = 1.0,int min_value=0,int max_value=0,str format = \"%d\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_int_range2(str label,int current_min,int current_max,float speed = 1.0,int min_value = 0,int max_value = 0,str format = \"%d\",str format_max = None,cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_scalar(str label,cimgui.ImGuiDataType data_type,bytes data,float change_speed,bytes min_value = None,bytes max_value = None,str format = None,cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def drag_scalar_N(str label,cimgui.ImGuiDataType data_type,bytes data,int components,float change_speed,bytes min_value = None,bytes max_value = None,str format = None,cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_text(str label,str value,int buffer_length,cimgui.ImGuiInputTextFlags flags=0,object callback = None,user_data = None)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_text_multiline(str label,str value,int buffer_length,float width=0,float height=0,cimgui.ImGuiInputTextFlags flags=0,object callback = None,user_data = None)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_text_with_hint(str label,str hint,str value,int buffer_length,cimgui.ImGuiInputTextFlags flags = 0,object callback = None,user_data = None)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_float(str label,float value,float step=0.0,float step_fast=0.0,str format = \"%.3f\",cimgui.ImGuiInputTextFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_float2(str label,float value0, float value1,str format = \"%.3f\",cimgui.ImGuiInputTextFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_float3(str label,float value0, float value1, float value2,str format = \"%.3f\",cimgui.ImGuiInputTextFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_float4(str label,float value0, float value1, float value2, float value3,str format = \"%.3f\",cimgui.ImGuiInputTextFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_int(str label,int value,int step=1,int step_fast=100,cimgui.ImGuiInputTextFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_int2(str label,int value0, int value1,cimgui.ImGuiInputTextFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_int3(str label,int value0, int value1, int value2,cimgui.ImGuiInputTextFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_int4(str label,int value0, int value1, int value2, int value3,cimgui.ImGuiInputTextFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_double(str label,double value,double step=0.0,double step_fast=0.0,str format = \"%.6f\",cimgui.ImGuiInputTextFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_scalar(str label,cimgui.ImGuiDataType data_type,bytes data,bytes step = None,bytes step_fast = None,str format = None,cimgui.ImGuiInputTextFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def input_scalar_N(str label,cimgui.ImGuiDataType data_type,bytes data,int components,bytes step = None,bytes step_fast = None,str format = None,cimgui.ImGuiInputTextFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_float(str label,float value,float min_value,float max_value,str format = \"%.3f\",cimgui.ImGuiSliderFlags flags = 0,)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_float2(str label,float value0, float value1,float min_value,float max_value,str format = \"%.3f\",cimgui.ImGuiSliderFlags flags = 0,)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_float3(str label,float value0, float value1, float value2,float min_value,float max_value,str format = \"%.3f\",cimgui.ImGuiSliderFlags flags = 0,)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_float4(str label,float value0, float value1, float value2, float value3,float min_value,float max_value,str format = \"%.3f\",cimgui.ImGuiSliderFlags flags = 0,)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_angle(str label,float rad_value,float value_degrees_min = -360.0,float value_degrees_max = 360,str format = \"%.0f deg\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_int(str label,int value,int min_value,int max_value,str format = \"%.f\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_int2(str label,int value0, int value1,int min_value,int max_value,str format = \"%.f\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_int3(str label,int value0, int value1, int value2,int min_value,int max_value,str format = \"%.f\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_int4(str label,int value0, int value1, int value2, int value3,int min_value,int max_value,str format = \"%.f\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_scalar(str label,cimgui.ImGuiDataType data_type,bytes data,bytes min_value,bytes max_value,str format = None,cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def slider_scalar_N(str label,cimgui.ImGuiDataType data_type,bytes data,int components,bytes min_value,bytes max_value,str format = None,cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def v_slider_float(str label,float width,float height,float value,float min_value,float max_value,str format = \"%.f\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def v_slider_int(str label,float width,float height,int value,int min_value,int max_value,str format = \"%d\",cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def v_slider_scalar(str label,float width,float height,cimgui.ImGuiDataType data_type,bytes data,bytes min_value,bytes max_value,str format = None,cimgui.ImGuiSliderFlags flags = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def plot_lines(str label not None,const float[",
+  "class": "static"
+ },
+ {
+  "fun": "def plot_histogram(str label not None,const float[",
+  "class": "static"
+ },
+ {
+  "fun": "def progress_bar(float fraction, size = (-FLOAT_MIN,0), str overlay = \"\")",
+  "class": "static"
+ },
+ {
+  "fun": "def set_keyboard_focus_here(int offset = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def is_item_focused()",
+  "class": "static"
+ },
+ {
+  "fun": "def is_item_clicked(cimgui.ImGuiMouseButton mouse_button = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def is_item_edited()",
+  "class": "static"
+ },
+ {
+  "fun": "def is_item_deactivated()",
+  "class": "static"
+ },
+ {
+  "fun": "def is_item_toggled_open()",
+  "class": "static"
+ },
+ {
+  "fun": "def is_any_item_active()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_item_rect_min()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_item_rect_size()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_main_viewport()",
+  "class": "static"
+ },
+ {
+  "fun": "def is_window_hovered(cimgui.ImGuiHoveredFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def is_window_focused(cimgui.ImGuiHoveredFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def is_rect_visible(float size_width, float size_height)",
+  "class": "static"
+ },
+ {
+  "fun": "def get_time()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_foreground_draw_list()",
+  "class": "static"
+ },
+ {
+  "fun": "def is_key_pressed(int key_index, bool repeat = False)",
+  "class": "static"
+ },
+ {
+  "fun": "def is_mouse_hovering_rect(float r_min_x, float r_min_y,float r_max_x, float r_max_y,bool clip=True)",
+  "class": "static"
+ },
+ {
+  "fun": "def is_mouse_double_clicked(int button = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def is_mouse_released(int button = 0)",
+  "class": "static"
+ },
+ {
+  "fun": "def is_mouse_dragging(int button, float lock_threshold = -1.0)",
+  "class": "static"
+ },
+ {
+  "fun": "def get_mouse_pos()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_mouse_cursor()",
+  "class": "static"
+ },
+ {
+  "fun": "def capture_mouse_from_app(bool want_capture_mouse_value = True)",
+  "class": "static"
+ },
+ {
+  "fun": "def load_ini_settings_from_disk(str ini_file_name)",
+  "class": "static"
+ },
+ {
+  "fun": "def save_ini_settings_to_disk(str ini_file_name)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_clipboard_text(str text)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_scroll_here_x(float center_x_ratio = 0.5)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_scroll_from_pos_x(float local_x, float center_x_ratio = 0.5)",
+  "class": "static"
+ },
+ {
+  "fun": "def push_font(_Font font)",
+  "class": "static"
+ },
+ {
+  "fun": "def color_convert_u32_to_float4(cimgui.ImU32 in_)",
+  "class": "static"
+ },
+ {
+  "fun": "def color_convert_rgb_to_hsv(float r, float g, float b)",
+  "class": "static"
+ },
+ {
+  "fun": "def separator()",
+  "class": "static"
+ },
+ {
+  "fun": "def new_line()",
+  "class": "static"
+ },
+ {
+  "fun": "def dummy(width, height)",
+  "class": "static"
+ },
+ {
+  "fun": "def unindent(float width=0.0)",
+  "class": "static"
+ },
+ {
+  "fun": "def next_column()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_column_offset(int column_index=-1)",
+  "class": "static"
+ },
+ {
+  "fun": "def get_column_width(int column_index=-1)",
+  "class": "static"
+ },
+ {
+  "fun": "def get_columns_count()",
+  "class": "static"
+ },
+ {
+  "fun": "def end_tab_bar()",
+  "class": "static"
+ },
+ {
+  "fun": "def end_tab_item()",
+  "class": "static"
+ },
+ {
+  "fun": "def set_tab_item_closed(str tab_or_docked_window_label)",
+  "class": "static"
+ },
+ {
+  "fun": "def dockspace(cimgui.ImGuiID id, tuple size=(0, 0), cimgui.ImGuiDockNodeFlags flags=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def is_window_docked()",
+  "class": "static"
+ },
+ {
+  "fun": "def set_drag_drop_payload(str type, bytes data, cimgui.ImGuiCond condition=0)",
+  "class": "static"
+ },
+ {
+  "fun": "def begin_drag_drop_target()",
+  "class": "static"
+ },
+ {
+  "fun": "def _require_pointer(self)",
+  "class": "_ImGuiPayload"
+ },
+ {
+  "fun": "def data(self)",
+  "class": "_ImGuiPayload"
+ },
+ {
+  "fun": "def is_preview(self)",
+  "class": "_ImGuiPayload"
+ },
+ {
+  "fun": "def is_data_type(self, str type)",
+  "class": "_ImGuiPayload"
+ },
+ {
+  "fun": "def end_drag_drop_target()",
+  "class": "static"
+ },
+ {
+  "fun": "def push_clip_rect(float clip_rect_min_x,float clip_rect_min_y,float clip_rect_max_x,float clip_rect_max_y,bool intersect_with_current_clip_rect = False)",
+  "class": "static"
+ },
+ {
+  "fun": "def pop_clip_rect()",
+  "class": "static"
+ },
+ {
+  "fun": "def end_group()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_cursor_pos_x()",
+  "class": "static"
+ },
+ {
+  "fun": "def set_cursor_pos(local_pos)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_cursor_pos_y(float y)",
+  "class": "static"
+ },
+ {
+  "fun": "def get_cursor_screen_pos()",
+  "class": "static"
+ },
+ {
+  "fun": "def align_text_to_frame_padding()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_text_line_height_with_spacing()",
+  "class": "static"
+ },
+ {
+  "fun": "def get_frame_height_with_spacing()",
+  "class": "static"
+ },
+ {
+  "fun": "def destroy_context(_ImGuiContext ctx = None)",
+  "class": "static"
+ },
+ {
+  "fun": "def set_current_context(_ImGuiContext ctx)",
+  "class": "static"
+ },
+ {
+  "fun": "def pop_id()",
+  "class": "static"
+ },
+ {
+  "fun": "def _ansifeed_text_ansi(str text)",
+  "class": "static"
+ },
+ {
+  "fun": "def _py_font(_Font font)",
+  "class": "static"
+ },
+ {
+  "fun": "def _py_styled(cimgui.ImGuiStyleVar variable, value)",
+  "class": "static"
+ },
+ {
+  "fun": "def _py_istyled(*variables_and_values)",
+  "class": "static"
+ },
+ {
+  "fun": "def _py_scoped(str str_id)",
+  "class": "static"
+ },
+ {
+  "fun": "def _py_vertex_buffer_vertex_uv_offset()",
+  "class": "static"
+ },
+ {
+  "fun": "def _py_vertex_buffer_vertex_size()",
+  "class": "static"
+ },
+ {
+  "fun": "def update_platform_windows()",
+  "class": "static"
+ }
+]
