@@ -1,6 +1,8 @@
-# Generate interface for pyimgui
+# Generate public interfaces for pyimgui
 
 Missing autocomplete for pyimgui? 
+
+![](https://github.com/masc-it/pyimgui-interface-generator/raw/master/example_autocomplete_vscode.PNG)
 
 ## requirements
     pip install -r requirements.txt
