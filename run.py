@@ -1,4 +1,4 @@
-import regex as re
+import re
 import sys
 
 def extract_methods(pyx_file, out_name = None):
@@ -32,6 +32,7 @@ def extract_methods(pyx_file, out_name = None):
             fun_class = "static"
         elif found and "#" not in _l:
             method += _l
+        
     
     if out_name is not None:
         with open(out_name, "w") as fp:
@@ -40,9 +41,54 @@ def extract_methods(pyx_file, out_name = None):
     return methods
 
 
+def extract_methods_regex(pyx_file, out_name = None):
+    import json
+    with open(pyx_file, "r") as fp:
+        lines = fp.readlines()
+    
+    fun_pattern = r"^(def|cdef|cpdef) (_?[a-z0-9]+(_[a-z0-9]+)*)\((self|((.+ .+(,\s?)?)+)?)\)"
+    class_pattern = r"^(cdef class |class )(_?[a-zA-Z0-9]+)\(.*\):"
+    
+    split_fun_pattern = r"(cdef|def|cpdef) [a-z_]+\($"
+    fun_reg = re.compile(fun_pattern)
+    class_reg = re.compile(class_pattern)
+
+    methods = []
+    method = ""
+    method_indent = 0
+    class_name = "static"
+    
+    fun_class = "static"
+    for l in lines:
+        _l = l.strip()
+        # check if class
+        class_matches = class_reg.finditer(_l)
+
+        if class_matches is not None:
+            for m in class_matches:
+                class_name = m.group(2)
+
+        # check if function
+        fun_matches = fun_reg.finditer(_l)
+
+        if fun_matches is not None and method == "": # len(list(fun_matches)) > 0
+            #print(_l)
+            for _ in fun_matches:
+                method_indent = len(l) - len(l.lstrip())
+                fun_class = "static" if method_indent == 0 else class_name
+                methods.append({"fun": _l.split(":")[0], "class": fun_class})
+
+    
+    if out_name is not None:
+        with open(out_name, "w") as fp:
+            json.dump(methods, fp, indent=1)
+    
+    return methods
+
 def generate_pyi(methods_json):
 
     types_dict = {
+        "unsigned int": "int",
         "int": "int",
         "str": "str",
         "double": "float",
@@ -84,16 +130,19 @@ def generate_pyi(methods_json):
                         default_val = None
                         p = p.strip()
                         p = p.replace(" =", "=").replace("= ", "=")
-
-                        if p.count(" ") >= 1:
+                        if "add_input_character" in m_name:
+                            print(p_type)
+                            print(default_val)
+                        s_count = p.count(" ")
+                        if s_count >= 1:
                             # print(p)
-                            first_space_idx = p.find(" ")
-                            p_type = p[0:first_space_idx]
-                            p_name = p[first_space_idx:]
+                            last_space_idx = p.rfind(" ")
+                            p_type = p[0:last_space_idx]
+                            p_name = p[last_space_idx:]
                             if "=" in p_name:
                                 default_val = p_name.split("=")[1]
                                 p_name = p_name.split("=")[0]
-
+                            
                             if types_dict.get(p_type) is None:
                                 p_type = "Any"
                             else:
@@ -155,9 +204,9 @@ def generate_pyi(methods_json):
 
                         if p.count(" ") >= 1:
                             # print(p)
-                            first_space_idx = p.find(" ")
-                            p_type = p[0:first_space_idx]
-                            p_name = p[first_space_idx:]
+                            last_space_idx = p.rfind(" ")
+                            p_type = p[0:last_space_idx]
+                            p_name = p[last_space_idx:]
                             if "=" in p_name:
                                 default_val = p_name.split("=")[1]
                                 p_name = p_name.split("=")[0]
@@ -204,10 +253,20 @@ def generate_pyi(methods_json):
         fp.writelines(res)
 
 
-def extract(pyx_file,):
-    methods = extract_methods(pyx_file)
+def extract(pyx_file,out_name=None):
+    methods1 = extract_methods(pyx_file, out_name)
+    methods2 = extract_methods_regex(pyx_file, out_name)
+
+    methods = methods1
+
+    m_names = list(map(lambda x: x["fun"].split("(")[0], methods1))
+    for m in methods2:
+        if not m["fun"].split("(")[0] in m_names:
+            methods.append(m)
+
+
     generate_pyi(methods)
 
 if __name__ == "__main__":
 
-    extract(sys.argv[1])
+    extract(sys.argv[1], sys.argv[2],)
