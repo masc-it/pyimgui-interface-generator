@@ -19,7 +19,7 @@ The file core.pyx in this repo comes from the pyimgui docking branch. Let's say 
 
 What now?
 
-Copy *imgui.pyi* in your virtual environment root folder.
+Copy *imgui.pyi* in your virtual environment "site-packages" folder. 
 
 Note: Reload your IDE so that it correctly recognizes the interface. 
 
